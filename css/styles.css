@@ -1,0 +1,196 @@
+/* font-family: 'Noto Serif JP', serif; */
+
+:root {
+}
+
+body {
+  font-family: "Gilroy";
+}
+
+.container {
+  width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.list {
+  list-style: none;
+}
+
+/* ---header--- */
+
+.header {
+  position: relative;
+  max-width: 1920px;
+  height: 950px;
+  background-image: linear-gradient(
+      rgba(51, 51, 51, 0.87),
+      rgba(51, 51, 51, 0.87)
+    ),
+    url(../img/bgc.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 120px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  margin-bottom: 523px;
+}
+
+.menu-list {
+  display: flex;
+  margin-right: 126px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.menu-list .menu-link:hover {
+  color: rgb(237, 143, 29);
+}
+
+.menu-link,
+.nav-search .search,
+.account-text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.logo {
+  margin-right: 100px;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.nav-account,
+.nav-search .search {
+  display: flex;
+  align-items: center;
+}
+
+.nav-search {
+  margin-right: 40px;
+}
+
+.nav-search .search {
+  fill: #fff;
+}
+
+.nav-search:hover .search {
+  fill: rgb(237, 143, 29);
+  color: rgb(237, 143, 29);
+}
+
+.search .search-svg {
+  margin-right: 13px;
+}
+
+.account-text {
+  margin-right: 40px;
+}
+
+.account-text:hover {
+  color: rgb(237, 143, 29);
+}
+
+.account-svg {
+  margin-right: 25px;
+}
+
+.text {
+  margin-bottom: 74px;
+}
+
+.title {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.36;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.text .btn {
+  display: block;
+  margin: 0 auto;
+  width: 261px;
+  height: 51px;
+  background: #333333;
+  border: 1px solid #ffffff;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+.brands-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.brands-item {
+  position: relative;
+  padding-right: 15px;
+}
+
+.brands-item::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background-color: #fff;
+}
+
+.brands-item:last-child::after {
+  content: none;
+}
